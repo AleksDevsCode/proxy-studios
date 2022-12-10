@@ -1,84 +1,35 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from './components/Header';
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="h-screen bg-black text-white">
       <Head>
-        <title>Create Next App</title>
+        <title>Proxy Studios</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main>
+        <Header />
+        <div className='pt-[100px] px-[190px]'>
+          <h1 className='font-bold text-5xl'>TAKE CONTROL.</h1>
+          <br></br>
+          <p className='font-medium text-gray-400'>Take control over your experience and live in the moment.</p>
+          <p className='font-medium text-gray-400'>PROXY STUDIOS strives to make the best products for everyone</p>
+          <p className='font-medium text-gray-400'>with high quality desgins and endless fun.</p>
+          <br></br>
+          <a href='/projects'><button className='w-[200px] h-[40px] rounded-full bg-white text-black text-center hover:bg-black hover:border-2 hover:translate-y-[-2px] hover:border-white hover:text-white transition duration-500 ease-in-out'>projects</button></a>
+          <a href='/careers'><button className='ml-4 w-[200px] h-[40px] rounded-full bg-white text-black text-center hover:bg-black hover:border-2 hover:translate-y-[-2px] hover:border-white hover:text-white transition duration-500 ease-in-out'>careers</button></a>
+        </div>
+        <br></br>
+        <div className='bg-[url(https://wallpapercave.com/wp/wp3198557.jpg)] bg-cover w-full h-[533px]'>
+          <h1 className='pt-[200px] text-center font-bold text-7xl'>NUCTORNO</h1>
+          <p className='font-medium text-gray-300 text-center pt-[10px]'>Strives to bring the best moderation to discord</p>
+          <br></br>
+          <a href='/nuctornoinvite' className='flex justify-center'><button className='w-[200px] h-[40px] rounded-full bg-black bg-opacity-50 text-white text-center hover:bg-white hover:translate-y-[-2px] hover:border-white hover:text-black transition duration-500 ease-in-out'>Invite</button></a>
         </div>
       </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
     </div>
   )
 }
