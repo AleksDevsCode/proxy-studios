@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           <h1 className='pt-[200px] text-center font-bold text-7xl'>NUCTORNO</h1>
           <p className='font-medium text-gray-300 text-center pt-[10px]'>Strives to bring the best moderation to discord</p>
           <br></br>
-          <a href='/nuctornoinvite' className='flex justify-center'><button className='w-[200px] h-[40px] rounded-full bg-black bg-opacity-50 text-white text-center hover:bg-white hover:translate-y-[-2px] hover:border-white hover:text-black transition duration-500 ease-in-out'>Invite</button></a>
+          <a href='https://discord.com/api/oauth2/authorize?client_id=1030807295661187163&permissions=8&scope=bot%20applications.commands' className='flex justify-center'><button className='w-[200px] h-[40px] rounded-full bg-black bg-opacity-50 text-white text-center hover:bg-white hover:translate-y-[-2px] hover:border-white hover:text-black transition duration-500 ease-in-out'>Invite</button></a>
         </div>
       </main>
     </div>
